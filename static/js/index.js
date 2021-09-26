@@ -1,4 +1,4 @@
-//https://www.eclipse.org/paho/clients/js/
+https://www.eclipse.org/paho/clients/js/
 
 function LED1_On() {
 	//alert("led on");
