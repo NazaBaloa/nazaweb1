@@ -37,8 +37,11 @@ function LED2_Off(){
 // Create a client instance
   //client = new Paho.MQTT.Client("postman.cloudmqtt.com", 14970);
   
+  //maqiatto
   //client = new Paho.MQTT.Client("maqiatto.com", 8883, "web_" + parseInt(Math.random() * 100, 10));
-client = new Paho.MQTT.Client("broker.mqttdashboard.com", 8000, "web_" + parseInt(Math.random() * 100, 10));
+
+  //otroPrograma
+  client = new Paho.MQTT.Client("broker.mqttdashboard.com", 8000, "web_" + parseInt(Math.random() * 100, 10));
   // set callback handlers
   client.onConnectionLost = onConnectionLost;
   client.onMessageArrived = onMessageArrived;
@@ -88,9 +91,6 @@ client = new Paho.MQTT.Client("broker.mqttdashboard.com", 8000, "web_" + parseIn
   //document.getElementById("Actual").innerHTML=MensajeRecibido;
   document.getElementById("sensor1").innerHTML=Sensores[0];
   document.getElementById("sensor2").innerHTML=Sensores[1];
-
-
-
 
 
 
